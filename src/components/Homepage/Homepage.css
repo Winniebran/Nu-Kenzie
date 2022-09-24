@@ -1,0 +1,95 @@
+.Homepage-header{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Homepage-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 25rem;
+    align-items: center;
+  }
+  
+  .Homepage-logo {
+    width: 7rem;
+  }
+  
+  .Homepage-section > h1 {
+    font-size: var(--title-1);
+    font-weight: var(--font-weight-1);
+    text-align: center;
+  }
+  
+  .Homepage-section > p {
+    font-size: var(--headline);
+    font-weight: var(--font-weight-4);
+  }
+  
+  .Homepage-button {
+    width: 14rem;
+    height: 14%;
+    background-color: var(--color-primary-1);
+    border: 2px solid var(--color-primary-1);
+    border-radius: 5px;
+    color: var(--color-grey-5);
+    font-size: var(--headline);
+    font-weight: var(--font-weight-3);
+    cursor: pointer;
+    transition: ease-in-out .5s;
+  }
+
+  .Homepage-button:hover{
+    background-color: var(--color-primary-2);
+  }
+  
+  .Homepage-aside {
+    width: 80%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Homepage-illustration {
+    width: 18rem;
+  }
+
+  @media (min-width: 700px) {
+    .Homepage-header{
+      flex-direction: row;
+    }
+    
+    .Homepage-section {
+      width: 20rem;
+      height: 50%;
+      align-items: flex-start;
+    }
+    
+    .Homepage-logo {
+      width: 8rem;
+    }
+    
+    .Homepage-section > h1 {
+      font-size: var(--title-0);
+      text-align: left;
+    }
+    
+    .Homepage-button {
+      width: 80%;
+      height: 12%;
+    }
+    
+    .Homepage-aside {
+      width: 35rem;
+      height: 100%;
+    }
+    
+    .Homepage-illustration {
+      width: 28rem;
+    }
+  }
